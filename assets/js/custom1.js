@@ -4,9 +4,11 @@ fetch("https://ipinfo.io/json?token=fe72b22c09ea97").then(
     (jsonResponse) => {
         const isUkraine = jsonResponse.country === "UA";
         if (isUkraine) {
-            document.getElementById("notUkraine").remove();
+            document.getElementById("notUkraine1").remove();
+            document.getElementById("notUkraine2").remove();
         } else {
-            document.getElementById("sale-time").remove();
+            document.getElementById("sale-time1").remove();
+            document.getElementById("sale-time2").remove();
         }
     }
 )
@@ -29,7 +31,7 @@ fetch("https://api.battlemetrics.com/servers/18419772", requestOptions)
 //function
 window.addEventListener("DOMContentLoaded",move=() =>{
     //global condition (increment j by 1)
-    if (counter == 0) {
+    if (counter === 0) {
         J = 1;
         //select element
         var elem = document.querySelector("#main-done");
@@ -74,7 +76,7 @@ window.addEventListener("DOMContentLoaded",move=() =>{
 //function
 window.addEventListener("DOMContentLoaded",move=() =>{
     //global condition (increment j by 1)
-    if (counter == 0) {
+    if (counter === 0) {
         J = 1;
         //select element
         var elem = document.querySelector("#duo-done");
@@ -120,7 +122,7 @@ window.addEventListener("DOMContentLoaded",move=() =>{
 //function
 window.addEventListener("DOMContentLoaded",move=() =>{
     //global condition (increment j by 1)
-    if (counter == 0) {
+    if (counter === 0) {
         J = 1;
         //select element
         var elem = document.querySelector("#mondays-done");
@@ -164,7 +166,7 @@ window.addEventListener("DOMContentLoaded",move=() =>{
 
 window.addEventListener("DOMContentLoaded",move=() =>{
     //global condition (increment j by 1)
-    if (counter == 0) {
+    if (counter === 0) {
         J = 1;
         //select element
         var elem = document.querySelector("#squad-done");
