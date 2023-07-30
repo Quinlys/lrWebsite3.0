@@ -78,26 +78,26 @@
             </div>
             <div class="wrapper">
                 <div class="item">
-                    <a href="#store">
-                        <img src="images/logo.jpg" alt="elite" class="img-card">
+                    <a href="#store" onclick="clickMain()">
+                        <img src="images/logo.jpg" alt="MAIN" class="img-card blue-card">
                         <h4>[UA] LIBERTY | X2 MAIN</h4>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#store">
-                        <img src="images/logo.jpg" alt="vip" class="img-card">
+                    <a href="#store" onclick="clickDuo()">
+                        <img src="images/logo.jpg" alt="SOLO/DUO" class="img-card blue-card">
                         <h4>[UA] LIBERTY | X2 SOLO/DUO</h4>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#store">
-                        <img src="images/logo.jpg" alt="sponsor" class="img-card">
+                    <a href="#store" onclick="clickMondays()">
+                        <img src="images/logo.jpg" alt="MONDAYS" class="img-card blue-card">
                         <h4>[UA] LIBERTY | X2 MONDAYS</h4>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#store">
-                        <img src="images/logo.jpg" alt="research" class="img-card">
+                    <a href="#store" onclick="clickSquad()">
+                        <img src="images/logo.jpg" alt="TRIO/SQUAD" class="img-card blue-card">
                         <h4>[UA] LIBERTY | X2 TRIO/SQUAD</h4>
                     </a>
                 </div>
@@ -106,7 +106,8 @@
 
         <!-- store -->
         <article id="store">
-            <h2 class="major">МАГАЗИН</h2>
+            <h2 class="major" id="server-name">МАГАЗИН</h2>
+            <hr/>
             <div class="wrapper">
                 <div id="notUkraine2">
                     <p class="attention">УВАГА</p>
@@ -126,86 +127,118 @@
             </div>
             <div class="wrapper">
                 <div class="item">
-                    <a href="#elite">
-                        <img src="images/elite.png" alt="elite" class="img-card">
+                    <a href="#elite" onclick="clickElite()">
+                        <img src="images/elite.png" alt="elite" class="img-card purple-card">
                         <h4>Elite привілея</h4>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#vip">
-                        <img src="images/vip.png" alt="vip" class="img-card">
+                    <a href="#vip" onclick="clickVip()">
+                        <img src="images/vip.png" alt="vip" class="img-card yellow-card">
                         <h4>VIP привілея</h4>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#sponsor">
-                        <img src="images/sponsor.jpg" alt="sponsor" class="img-card">
+                    <a href="#sponsor" onclick="clickSponsor()">
+                        <img src="images/sponsor.png" alt="sponsor" class="img-card red-card">
                         <h4>Станьте спонсором!</h4>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#research">
-                        <img src="images/research.png" alt="research" class="img-card">
+                    <a href="#blueprints" onclick="clickBlueprints()">
+                        <img src="images/salesImg/blueprintssale.png" alt="blueprints" class="img-card blue-card">
                         <h4>Відкриття вивчень!</h4>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#components">
-                        <img src="images/components.png" alt="components" class="img-card not-sale">
-                        <img src="images/salesImg/componentssale.png" class="sale" alt="">
+                    <a href="#components" onclick="clickComponents()">
+                        <img src="images/components.png" alt="components" class="img-card not-sale blue-card">
+                        <img src="images/salesImg/componentssale.png" class="sale blue-card" alt="">
                         <h4>Набір компонентів</h4>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#resource">
-                        <img src="images/resource.png" alt="resource" class="img-card not-sale">
-                        <img src="images/salesImg/resourcesale.png" class="sale" alt="">
+                    <a href="#resources" onclick="clickResources()">
+                        <img src="images/resources.png" alt="resources" class="img-card not-sale blue-card">
+                        <img src="images/salesImg/resourcessale.png" class="sale blue-card" alt="">
                         <h4>Набір ресурсів!</h4>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#teritory">
-                        <img src="images/teritory.png" alt="teritory" class="img-card not-sale">
-                        <img src="images/salesImg/territorysale.png" class="sale" alt="">
+                    <a href="#territory" onclick="clickTerritory()">
+                        <img src="images/territory.png" alt="territory" class="img-card not-sale blue-card">
+                        <img src="images/salesImg/territorysale.png" class="sale blue-card" alt="">
                         <h4>Набір для території</h4>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#farmer">
-                        <img src="images/farmer.png" alt="farmer" class="img-card not-sale">
-                        <img src="images/salesImg/farmersale.png" class="sale" alt="">
+                    <a href="#farmer" onclick="clickFarmer()">
+                        <img src="images/farmer.png" alt="farmer" class="img-card not-sale blue-card">
+                        <img src="images/salesImg/farmersale.png" class="sale blue-card" alt="">
                         <h4>Набір для фармера!</h4>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#workbench">
-                        <img src="images/workbench.png" alt="workbench" class="img-card not-sale">
-                        <img src="images/salesImg/worksale.png" class="sale" alt="">
+                    <a href="#workbench" onclick="clickWorkbench()">
+                        <img src="images/workbench.png" alt="workbench" class="img-card not-sale blue-card">
+                        <img src="images/salesImg/workbenchsale.png" class="sale blue-card" alt="">
                         <h4>3 верстаки!</h4>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#turrets">
-                        <img src="images/turrets.png" alt="turrets_img" class="img-card not-sale">
-                        <img src="images/salesImg/turretssale.png" class="sale" alt="">
+                    <a href="#turrets" onclick="clickTurrets()">
+                        <img src="images/turrets.png" alt="turrets_img" class="img-card not-sale blue-card">
+                        <img src="images/salesImg/turretssale.png" class="sale blue-card" alt="">
                         <h4>Набір турелі + ППО!</h4>
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#fuel">
-                        <img src="images/fuel.png" alt="fuel_img" class="img-card not-sale">
-                        <img src="images/salesImg/fuelsale.png" class="sale" alt="">
+                    <a href="#fuel" onclick="clickFuel()">
+                        <img src="images/fuel.png" alt="fuel_img" class="img-card not-sale blue-card">
+                        <img src="images/salesImg/fuelsale.png" class="sale blue-card" alt="">
                         <h4>Набір "Паливний магнат"!</h4>
                     </a>
                 </div>
+                <div class="item">
+                    <a href="#own" onclick="clickOwn()">
+                        <img src="images/own.png" alt="own_img" class="img-card yellow-card">
+                        <h4>Збери свій власний набір!</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="basket">
+                <a href="#basket">
+                    <button class="basket-button" style="line-height: 10px">
+                        Перейти в корзину
+                    </button>
+                </a>
+                <div class="basket-counter">
+                    0
+                </div>
+            </div>
+        </article>
 
+        <article id="basket">
+            <h2>Ваша корзина</h2>
+            <h3 id="server-name-basket">! Ви не вказали свій сервер, будь ласка поверніться на головну сторінку !</h3>
+            <div id="basket-items">
+            </div>
+            <div class="basket-bottom">
+                <div class="warning-massage-block">
+                </div>
+                <b id="sum"></b>
+                <input type="text" id="steamIdInput" value="Введіть свій Steam ID" />
+                <div id="how-to">
+                    <a target="_blank" href="https://help.steampowered.com/uk/faqs/view/2816-BE67-5B69-0FEC">Як дізнатись свій SteamID?</a>
+                </div>
+                <button class="buy-button" id="test">Оформити замовлення</button>
             </div>
         </article>
 
         <article id="elite">
             <div class="option">
                 <div class="img-option row">
-                    <img src="images/elite.jpg" alt="">
+                    <img src="images/elite.png" alt="elite" class="img-card purple-card">
                     <h3 class="title-option">Elite привілея</h3>
                 </div>
                 <div class="description-option">
@@ -233,8 +266,17 @@
                     </ul>
                 </div>
                 <div class="option-footer">
-                    <a href="https://liberty-rust.tebex.io/package/5396297" class="button wide primary" target="_blank">ПЕРЕЙТИ В МАГАЗИН</a>
-                    <img src="images/prices/9.99.png" alt="" class="prices-img">
+                    <div class="add-to-basket row">
+                        <a class="button add-to-basket-button">Додати в корзину</a>
+                        <p class="item-price-page-never">399 грн</p>
+                    </div>
+                </div>
+                <div class="basket-footer">
+                    <a href="#basket" class="button basket-button">Перейти в корзину для оформлення
+                        <div class="basket-counter-inside">
+                            0
+                        </div>
+                    </a>
                 </div>
             </div>
         </article>
@@ -242,7 +284,7 @@
         <article id="vip">
             <div class="option">
                 <div class="img-option row">
-                    <img src="images/vip.jpg" alt="">
+                    <img src="images/vip.png" alt="vip" class="img-card yellow-card">
                     <h3 class="title-option">VIP привілея</h3>
                 </div>
                 <div class="description-option">
@@ -264,9 +306,18 @@
                         <li>Можливість швидкого сортування за допомогою кнопки в меню інтерфейсу ящиків та холодильників.</li>
                     </ul>
                 </div>
-                <div>
-                    <a href="https://liberty-rust.tebex.io/package/5396348" class="button wide primary" target="_blank">ПЕРЕЙТИ В МАГАЗИН</a>
-                    <img class="prices-img" src="images/prices/4.99.png" alt="">
+                <div class="option-footer">
+                    <div class="add-to-basket row">
+                        <a class="button add-to-basket-button">Додати в корзину</a>
+                        <p class="item-price-page-never">199 грн</p>
+                    </div>
+                </div>
+                <div class="basket-footer">
+                    <a href="#basket" class="button basket-button" target="_blank">Перейти в корзину для оформлення
+                        <div class="basket-counter-inside">
+                            0
+                        </div>
+                    </a>
                 </div>
             </div>
         </article>
@@ -274,7 +325,7 @@
         <article id="sponsor">
             <div class="option">
                 <div class="img-option row">
-                    <img src="images/sponsor.jpg" alt="">
+                    <img src="images/sponsor.png" alt="">
                     <h3 class="title-option">Спонсорство проєкту. Elite статус в подарунок!</h3>
                 </div>
                 <div class="description-option">
@@ -304,34 +355,54 @@
                         Вперед розвивати українську спільноту в RUST!
                     </p>
                 </div>
-                <div>
-                    <a href="https://liberty-rust.tebex.io/package/5406501" class="button wide primary" target="_blank">ПЕРЕЙТИ В МАГАЗИН</a>
+                <div class="option-footer">
+                    <div class="add-to-basket row">
+                        <a class="button add-to-basket-button">Додати в корзину</a>
+                        <p class="item-price-page-never">599 грн</p>
+                    </div>
+                </div>
+                <div class="basket-footer">
+                    <a href="#basket" class="button basket-button" target="_blank">Перейти в корзину для оформлення
+                        <div class="basket-counter-inside">
+                            0
+                        </div>
+                    </a>
                 </div>
             </div>
         </article>
 
 
-        <article id="research">
+        <article id="blueprints">
             <div class="option">
                 <div class="img-option row">
-                    <img src="images/research.jpg" alt="">
+                    <img src="images/salesImg/blueprintssale.png" alt="blueprints" class="img-card blue-card">
                     <h3 class="title-option">Відкриття всіх вивчень на сервері!</h3>
                 </div>
                 <div class="description-option">
                     <p>Завдяки цьому набору вам буде доступний крафт любого можливого предмету на сервері Liberty Rust.
                     </p>
                 </div>
-                <div>
-                    <a href="https://liberty-rust.tebex.io/package/5397642" class="button wide primary" target="_blank">ПЕРЕЙТИ В МАГАЗИН</a>
-                    <img class="prices-img" src="images/prices/9.99.png" alt="">
+                <div class="option-footer">
+                    <div class="add-to-basket row">
+                        <a class="button add-to-basket-button">Додати в корзину</a>
+                        <p class="item-price-page-never">399 грн</p>
+                    </div>
+                </div>
+                <div class="basket-footer">
+                    <a href="#basket" class="button basket-button" target="_blank">Перейти в корзину для оформлення
+                        <div class="basket-counter-inside">
+                            0
+                        </div>
+                    </a>
                 </div>
             </div>
         </article>
 
-        <article id="teritory">
+        <article id="territory">
             <div class="option">
                 <div class="img-option row">
-                    <img src="images/teritory.jpg" alt="">
+                    <img src="images/territory.png" alt="territory" class="img-card not-sale blue-card">
+                    <img src="images/salesImg/territorysale.png" class="sale blue-card" alt="">
                     <h3 class="title-option">Набір "Власна територія"!</h3>
                 </div>
                 <div class="description-option">
@@ -347,10 +418,21 @@
                     </ul>
                     <p>Товар з'явиться у вас в інвентарі одразу після покупки. Переконайтесь, що в вашому інвентарі достатньо слотів для товару.</p>
                 </div>
-                <div>
-                    <a href="https://liberty-rust.tebex.io/package/5406444" class="button wide primary" target="_blank">ПЕРЕЙТИ В МАГАЗИН</a>
-                    <img class="prices-img not-sale" src="images/prices/3.99.png" alt="">
-                    <img class="prices-img sale" src="images/prices/3.99sale.png" alt="">
+                <div class="option-footer">
+                    <div class="add-to-basket row">
+                        <a class="button add-to-basket-button">Додати в корзину</a>
+                        <div class="prices">
+                            <p class="sale-item-price-page">79 грн</p>
+                            <p class="item-price-page">159 грн</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket-footer">
+                    <a href="#basket" class="button basket-button" target="_blank">Перейти в корзину для оформлення
+                        <div class="basket-counter-inside">
+                            0
+                        </div>
+                    </a>
                 </div>
             </div>
         </article>
@@ -358,7 +440,8 @@
         <article id="components">
             <div class="option">
                 <div class="img-option row">
-                    <img src="images/components.jpg" alt="">
+                    <img src="images/components.png" alt="components" class="img-card not-sale blue-card">
+                    <img src="images/salesImg/componentssale.png" class="sale blue-card" alt="">
                     <h3 class="title-option">Набір компонентів</h3>
                 </div>
                 <div class="description-option">
@@ -381,10 +464,21 @@
                     </ul>
                     <p>Товар з'явиться у вас в інвентарі одразу після покупки. Переконайтесь, що в вашому інвентарі достатньо слотів для товару.</p>
                 </div>
-                <div>
-                    <a href="https://liberty-rust.tebex.io/package/5397623" class="button wide primary" target="_blank">ПЕРЕЙТИ В МАГАЗИН</a>
-                    <img class="prices-img not-sale" src="images/prices/3.99.png" alt="">
-                    <img class="prices-img sale" src="images/prices/3.99sale.png" alt="">
+                <div class="option-footer">
+                    <div class="add-to-basket row">
+                        <a class="button add-to-basket-button">Додати в корзину</a>
+                        <div class="prices">
+                            <p class="sale-item-price-page">79 грн</p>
+                            <p class="item-price-page">159 грн</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket-footer">
+                    <a href="#basket" class="button basket-button" target="_blank">Перейти в корзину для оформлення
+                        <div class="basket-counter-inside">
+                            0
+                        </div>
+                    </a>
                 </div>
             </div>
         </article>
@@ -392,7 +486,8 @@
         <article id="workbench">
             <div class="option">
                 <div class="img-option row">
-                    <img src="images/workbench.jpg" alt="">
+                    <img src="images/workbench.png" alt="workbench" class="img-card not-sale blue-card">
+                    <img src="images/salesImg/workbenchsale.png" class="sale blue-card" alt="">
                     <h3 class="title-option">Набір з трьох верстаків!</h3>
                 </div>
                 <div class="description-option">
@@ -401,10 +496,21 @@
                         Товар з'явиться у вас в інвентарі одразу після покупки. Переконайтесь, що в вашому інвентарі доступні 3 слоти.
                     </p>
                 </div>
-                <div>
-                    <a href="https://liberty-rust.tebex.io/package/5397201" class="button wide primary" target="_blank">ПЕРЕЙТИ В МАГАЗИН</a>
-                    <img class="prices-img not-sale" src="images/prices/2.99.png" alt="">
-                    <img class="prices-img sale" src="images/prices/2.99sale.png" alt="">
+                <div class="option-footer">
+                    <div class="add-to-basket row">
+                        <a class="button add-to-basket-button">Додати в корзину</a>
+                        <div class="prices">
+                            <p class="sale-item-price-page">59 грн</p>
+                            <p class="item-price-page">119 грн</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket-footer">
+                    <a href="#basket" class="button basket-button" target="_blank">Перейти в корзину для оформлення
+                        <div class="basket-counter-inside">
+                            0
+                        </div>
+                    </a>
                 </div>
             </div>
         </article>
@@ -412,7 +518,8 @@
         <article id="turrets">
             <div class="option">
                 <div class="img-option row">
-                    <img src="images/turrets.jpg" alt="">
+                    <img src="images/turrets.png" alt="turrets_img" class="img-card not-sale blue-card">
+                    <img src="images/salesImg/turretssale.png" class="sale blue-card" alt="">
                     <h3 class="title-option">Набір турелі + ППО!</h3>
                 </div>
                 <div class="description-option">
@@ -428,10 +535,21 @@
                     </ul>
                     <p>Товар з'явиться у вас в інвентарі одразу після покупки. Переконайтесь, що в вашому інвентарі достатньо слотів для товару.</p>
                 </div>
-                <div>
-                    <a href="https://liberty-rust.tebex.io/package/5523588" class="button wide primary" target="_blank">ПЕРЕЙТИ В МАГАЗИН</a>
-                    <img class="prices-img not-sale" src="images/prices/3.99.png" alt="">
-                    <img class="prices-img sale" src="images/prices/3.99sale.png" alt="">
+                <div class="option-footer">
+                    <div class="add-to-basket row">
+                        <a class="button add-to-basket-button">Додати в корзину</a>
+                        <div class="prices">
+                            <p class="sale-item-price-page">79 грн</p>
+                            <p class="item-price-page">159 грн</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket-footer">
+                    <a href="#basket" class="button basket-button" target="_blank">Перейти в корзину для оформлення
+                        <div class="basket-counter-inside">
+                            0
+                        </div>
+                    </a>
                 </div>
             </div>
         </article>
@@ -439,7 +557,8 @@
         <article id="farmer">
             <div class="option">
                 <div class="img-option row">
-                    <img src="images/farmer.jpg" alt="">
+                    <img src="images/farmer.png" alt="farmer" class="img-card not-sale blue-card">
+                    <img src="images/salesImg/farmersale.png" class="sale blue-card" alt="">
                     <h3 class="title-option">Набір для справжнього фармера</h3>
                 </div>
                 <div class="description-option">
@@ -455,18 +574,30 @@
                     </ul>
                     <p>Товар з'явиться у вас в інвентарі одразу після покупки. Переконайтесь, що в вашому інвентарі достатньо слотів для товару.</p>
                 </div>
-                <div>
-                    <a href="https://liberty-rust.tebex.io/package/5397524" class="button wide primary" target="_blank">ПЕРЕЙТИ В МАГАЗИН</a>
-                    <img class="prices-img not-sale" src="images/prices/3.49.png" alt="">
-                    <img class="prices-img sale" src="images/prices/3.49sale.png" alt="">
+                <div class="option-footer">
+                    <div class="add-to-basket row">
+                        <a class="button add-to-basket-button">Додати в корзину</a>
+                        <div class="prices">
+                            <p class="sale-item-price-page">69 грн</p>
+                            <p class="item-price-page">139 грн</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket-footer">
+                    <a href="#basket" class="button basket-button" target="_blank">Перейти в корзину для оформлення
+                        <div class="basket-counter-inside">
+                            0
+                        </div>
+                    </a>
                 </div>
             </div>
         </article>
 
-        <article id="resource">
+        <article id="resources">
             <div class="option">
                 <div class="img-option row">
-                    <img src="images/resource.jpg" alt="">
+                    <img src="images/resources.png" alt="resources" class="img-card not-sale blue-card">
+                    <img src="images/salesImg/resourcessale.png" class="sale blue-card" alt="">
                     <h3 class="title-option">Набір з ресурсами!</h3>
                 </div>
                 <div class="description-option">
@@ -482,10 +613,21 @@
                     </ul>
                     <p>Товар з'явиться у вас в інвентарі одразу після покупки. Переконайтесь, що в вашому інвентарі достатньо слотів для товару.</p>
                 </div>
-                <div>
-                    <a href="https://liberty-rust.tebex.io/package/5397486" class="button wide primary" target="_blank">ПЕРЕЙТИ В МАГАЗИН</a>
-                    <img class="prices-img not-sale" src="images/prices/3.49.png" alt="">
-                    <img class="prices-img sale" src="images/prices/3.49sale.png" alt="">
+                <div class="option-footer">
+                    <div class="add-to-basket row">
+                        <a class="button add-to-basket-button">Додати в корзину</a>
+                        <div class="prices">
+                            <p class="sale-item-price-page">69 грн</p>
+                            <p class="item-price-page">139 грн</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket-footer">
+                    <a href="#basket" class="button basket-button" target="_blank">Перейти в корзину для оформлення
+                        <div class="basket-counter-inside">
+                            0
+                        </div>
+                    </a>
                 </div>
             </div>
         </article>
@@ -493,7 +635,8 @@
         <article id="fuel">
             <div class="option">
                 <div class="img-option row">
-                    <img src="images/fuel.jpg" alt="fuel_img">
+                    <img src="images/fuel.png" alt="fuel_img" class="img-card not-sale blue-card">
+                    <img src="images/salesImg/fuelsale.png" class="sale blue-card" alt="">
                     <h3 class="title-option">Набір "Паливний магнат"!</h3>
                 </div>
                 <div class="description-option">
@@ -509,13 +652,41 @@
                     </ul>
                     <p>Товар з'явиться у вас в інвентарі одразу після покупки. Переконайтесь, що в вашому інвентарі достатньо слотів для товару.</p>
                 </div>
-                <div>
-                    <a href="https://liberty-rust.tebex.io/package/5699216" class="button wide primary" target="_blank">ПЕРЕЙТИ В МАГАЗИН</a>
-                    <img class="prices-img not-sale" src="images/prices/3.49.png" alt="">
-                    <img class="prices-img sale" src="images/prices/3.49sale.png" alt="">
+                <div class="option-footer">
+                    <div class="add-to-basket row">
+                        <a class="button add-to-basket-button">Додати в корзину</a>
+                        <div class="prices">
+                            <p class="sale-item-price-page">69 грн</p>
+                            <p class="item-price-page">139 грн</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket-footer">
+                    <a href="#basket" class="button basket-button" target="_blank">Перейти в корзину для оформлення
+                        <div class="basket-counter-inside">
+                            0
+                        </div>
+                    </a>
                 </div>
             </div>
         </article>
+
+
+        <article id="own">
+            <div class="option">
+                <div class="img-option row">
+                    <img src="images/own.png" alt="own_img" class="img-card yellow-card">
+                    <h3 class="title-option">Набір який ви можете зібрати самі!</h3>
+                </div>
+                <div class="description-option">
+                    <p>
+                        Даний набір ви можете зібрати самі з матеріалів та ресурсів які вам потрібні! <br>
+                        На даному етапі - цей набір перебуває в стані розробки. Очікуйте :)
+                    </p>
+                </div>
+            </div>
+        </article>
+
 
         <!-- Server -->
         <article id="server">
@@ -635,16 +806,16 @@
 
         </article>
     </div>
-
     <!-- Footer -->
     <footer id="footer">
         <p class="copyright">&copy; liberty-rust.com.ua</p>
     </footer>
-
 </div>
 
 <!-- BG -->
-<div id="bg"></div>
+<div id="bg">
+</div>
+
 
 <!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>

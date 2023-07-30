@@ -148,7 +148,6 @@ a {
     -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
     -ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-    border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
     text-decoration: none;
     color: inherit;
 }
@@ -186,7 +185,6 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
     border-bottom: solid 1px #ffffff;
-    width: -moz-max-content;
     width: max-content;
     padding-bottom: 0.5rem;
     margin: 0 0 2rem 0;
@@ -1178,17 +1176,12 @@ body.is-preload #bg:before {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    -moz-flex-direction: column;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    -moz-align-items: center;
     -webkit-align-items: center;
-    -ms-align-items: center;
     align-items: center;
-    -moz-justify-content: space-between;
     -webkit-justify-content: space-between;
-    -ms-justify-content: space-between;
     justify-content: space-between;
     position: relative;
     min-height: 100vh;
@@ -1254,11 +1247,14 @@ body.is-preload #footer {
 }
 
 .img-option img {
+    border-radius: 10%;
+    max-width: 400px;
     height: 50%;
     width: 50%;
 }
 
 .img-card {
+    border-radius: 10%;
     height: 100%;
     width: 100%;
 }
@@ -1293,10 +1289,9 @@ body.is-preload #footer {
     position: relative;
     opacity: 1;
     transform: scale(1.1);
-    box-shadow: 0 10px 90px rgba(0, 0, 0, 0.4);
 }
 
-#notUkraine, #sale-time {
+#notUkraine1, #notUkraine2, #sale-time1, #sale-time2 {
     width: 100%;
     padding: 15px;
     background-color: #3a3939;
@@ -1361,8 +1356,274 @@ body {
 }
 
 .sale {
+    margin: auto;
+    border-radius: 10%;
     display: none;
 }
+
+.title-option {
+    margin-top: 10px;
+}
+
+.warning-massage-block {
+    text-align: left;
+}
+
+.lower-basket-bottom {
+    text-align: center;
+}
+
+.add-to-basket-button{
+    position: relative;
+    font-size: 16px;
+    color: white;
+    cursor:pointer;
+    user-select:none;
+    text-align: center;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; /* Safari */
+}
+
+.add-to-basket-button:hover {
+    transition-duration: 0.1s;
+    background-color: #3A3A3A;
+}
+
+.add-to-basket-button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 5px;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 1s;
+    box-shadow: 0 0 5px 20px #485cb7;
+}
+
+.add-to-basket-button:active:after {
+    box-shadow: 0 0 0 0 white;
+    position: absolute;
+    left: 0;
+    top:0;
+    opacity: 1;
+    transition: 0s;
+}
+
+.add-to-basket-button:active {
+    top: 1px;
+}
+
+.basket-button {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    z-index: 1;
+}
+
+.basket-button-notEmpty {
+    animation: animate-basket 8s linear infinite;
+}
+
+.purple-card {
+    transition: all .5s;
+}
+
+.purple-card:hover {
+    border-radius: 5%;
+    background-color: #fff;
+    box-shadow:
+            0 0 15px 7px #d3a3ff,  /* inner white */
+            0 0 25px 15px #8c00ff, /* middle magenta */
+            0 0 35px 25px #6c03ce;
+}
+
+.elite-item {
+    box-shadow:
+            0 0 2px 1px #d3a3ff,  /* inner white */
+            0 0 4px 2px #8c00ff, /* middle magenta */
+            0 0 6px 4px #6c03ce;
+    transition: all .5s;
+
+}
+
+.elite-item:hover {
+    box-shadow:
+            0 0 4px 2px #d3a3ff,  /* inner white */
+            0 0 8px 4px #8c00ff, /* middle magenta */
+            0 0 12px 8px #6c03ce;
+}
+
+
+.blueprints-item {
+    box-shadow:
+            0 0 2px 1px #a3d9ff,  /* inner white */
+            0 0 4px 2px #0077ff, /* middle magenta */
+            0 0 6px 4px #033dce;
+    transition: all .5s;
+
+}
+
+.blueprints-item:hover {
+    box-shadow:
+            0 0 4px 2px #a3d9ff,  /* inner white */
+            0 0 8px 4px #0077ff, /* middle magenta */
+            0 0 12px 8px #033dce;
+}
+
+
+.sponsor-item {
+    box-shadow:
+            0 0 2px 1px #ffa3a3,  /* inner white */
+            0 0 4px 2px #ff0000, /* middle magenta */
+            0 0 6px 4px #ce0303;
+    transition: all .5s;
+
+}
+
+.sponsor-item:hover {
+    box-shadow:
+            0 0 4px 2px #ffa3a3,  /* inner white */
+            0 0 8px 4px #ff0000, /* middle magenta */
+            0 0 12px 8px #ce0303;
+}
+
+
+.vip-item {
+    box-shadow:
+            0 0 2px 1px #fff3a3,  /* inner white */
+            0 0 4px 2px #ffc400, /* middle magenta */
+            0 0 6px 4px #cea503;
+    transition: all .5s;
+
+}
+
+.vip-item:hover {
+    box-shadow:
+            0 0 4px 2px #fff3a3,  /* inner white */
+            0 0 8px 4px #ffc400, /* middle magenta */
+            0 0 12px 8px #cea503;
+}
+
+.yellow-card {
+    transition: all .5s;
+}
+
+.yellow-card:hover {
+    border-radius: 5%;
+    background-color: #fff;
+    box-shadow:
+            0 0 15px 7px #fff3a3,  /* inner white */
+            0 0 25px 15px #ffc400, /* middle magenta */
+            0 0 35px 25px #cea503;
+}
+
+.red-card {
+    transition: all .5s;
+}
+
+.red-card:hover {
+    border-radius: 5%;
+    background-color: #fff;
+    box-shadow:
+            0 0 15px 7px #ffa3a3,  /* inner white */
+            0 0 25px 15px #ff0000, /* middle magenta */
+            0 0 35px 25px #ce0303;
+}
+
+.blue-card {
+    transition: all .5s;
+}
+
+.blue-card:hover {
+    border-radius: 5%;
+    background-color: #fff;
+    box-shadow:
+            0 0 15px 7px #a3d9ff,  /* inner white */
+            0 0 25px 15px #0077ff, /* middle magenta */
+            0 0 35px 25px #033dce;
+}
+
+
+
+@keyframes animate-basket {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+
+.basket-button:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 1px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.basket-button:hover:before {
+    filter: blur(10px);
+    opacity: 1;
+    animation: animate 8s linear infinite;
+}
+
+.server-name-colored {
+    color: #0059ff;
+}
+
+#server-name {
+    border: 0;
+    margin-bottom: 0;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+#sum {
+    margin-bottom: 30px;
+}
+
+/* INPUT */
+
+#steamIdInput {
+    padding: 20px;
+    margin: 30px auto 5px auto;
+    width: 50%;
+}
+
+#how-to {
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+#how-to a:hover {
+    color: #587ee0;
+}
+
+
 
 @media screen and (max-width: 1680px) {
 
@@ -1573,12 +1834,187 @@ body.is-preload #header .content .inner {
     opacity: 0;
 }
 
+.basket {
+    margin: auto;
+    text-align: center;
+    height: 45px;
+    width: 280px;
+    padding-bottom: 80px;
+}
+
+.basket button {
+    max-width: 100%;
+    width: 280px;
+    font-size: 15px;
+}
+
+.basket-counter {
+    text-align: center;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    background-color: #587ee0;
+    margin: -13px 0 0 267px;
+    border-radius: 18px;
+    line-height: 35px;
+    box-shadow: 0 0 10px 10px rgba(36, 170, 253, 0.29);
+    z-index: 1;
+}
+
+.basket-counter-inside {
+    font-size: 20px; !important;
+    text-align: center;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    background-color: #587ee0;
+    border-radius: 18px;
+    line-height: 37.5px;
+    margin-top: -16px;
+    margin-left: -35px;
+
+    box-shadow: 0 0 10px 10px rgba(36, 170, 253, 0.29);
+}
+
+#server-name-basket {
+    color: #587ee0;
+    text-shadow: #24AAFD49 0 0 10px 10px;
+}
+
+#basket {
+    text-align: center;
+}
+
+.basket-item {
+    padding: 20px;
+    display: flex;
+    border: #969ea4 1px solid;
+    border-radius: 10px;
+    text-align: left;
+    height: 115px;
+    margin: 10px;
+}
+
+.basket-item img {
+    height: 70px;
+}
+
+.basket-item a {
+    border: 0;
+}
+
+.basket-item-name {
+    margin: 25px 0 0 15px;
+    padding-right: 20px;
+}
+
+.basket-item-counter {
+    margin: 0 0 0 auto;
+    width: 40px;
+}
+
+.basket-item-counter input {
+    height: 30px;
+    width: 15px;
+}
+
+.item-price {
+    font-size: 17px;
+    font-weight: bold;
+    min-width: 80px;
+    margin: 25px 0 0 auto;
+}
+
+.option-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.basket-footer a {
+    line-height: 60px;
+    letter-spacing: 2px;
+    height: 60px;
+}
+
+.add-to-basket {
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.add-to-basket a {
+    font-size: 11px;
+    text-align: center;
+}
+
+.basket-footer {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+.basket-footer a {
+    font-size: 11px;
+    text-align: center;
+    width: 100%;
+}
+
+.item-price-page, .sale-item-price-page, .item-price-page-never {
+    position: relative;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    min-width: 80px;
+    margin: auto 0 auto auto;
+}
+
+.sale-item-price-page {
+    display: none;
+}
+
+.red-line {
+    opacity: 0.3;
+}
+
+.red-line:before {
+    content: "";
+    margin-left: -10px;
+    border-bottom: 3px solid #fd0b0b;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    transform: rotate(-12deg);
+}
+.cancel {
+    height: 50px;
+    cursor: pointer;
+    margin: 15px 0 0 0;
+}
+
+.cancel img {
+    height: 50px;
+    border-radius: 25px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.cancel img:hover {
+    box-shadow: 0 0 10px 10px rgba(36, 170, 253, 0.29);
+}
+
+.buy-button {
+    margin: 20px 0 20px 0;
+}
+
 @media screen and (max-width: 980px) {
 
     #header .content p br {
         display: none;
     }
-
 }
 
 @media screen and (max-width: 736px) {
@@ -1701,7 +2137,7 @@ body.is-preload #header .content .inner {
     transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
     padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
     position: relative;
-    max-width: 40rem;
+    max-width: 80rem;
     background-color: rgba(27, 31, 34, 0.85);
     border-radius: 4px;
     opacity: 0;
@@ -1783,4 +2219,6 @@ body.is-preload #header .content .inner {
     }
 
 }
+
+
 
